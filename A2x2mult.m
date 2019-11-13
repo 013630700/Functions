@@ -1,4 +1,7 @@
-function [ res ] = A2x2mult( a,c11,c12,c21,c22,g1,g2)
+function [ res ] = A2x2mult(a,c11,c12,c21,c22,g1,g2)
+%function [ res ] = A2x2mult(a,c11,c12,c21,c22,g1,g2)
+% This function calculates multiplication A*g for system with two images
+% and two materials.
 %
 % Version 1.0, September 13, 2019
 % (c) Salla Latva-Äijö and Samuli Siltanen 
@@ -19,9 +22,6 @@ function [ res ] = A2x2mult( a,c11,c12,c21,c22,g1,g2)
 % res       vertical vector with length (a*g1*2)
 %
 % Last revision Salla Latva-Äijö Sep 2019
-
-% This function calculates multiplication A*g for system with two images
-% and two materials.
 
 % Perform the needed matrix multiplications
 ag1 = a*g1(:);
